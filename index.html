@@ -18,18 +18,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --primary-light: #818cf8;
-            --secondary: #ec4899;
-            --accent: #06b6d4;
+            --primary: #1B3A5C;
+            --primary-dark: #142D48;
+            --primary-light: #2A5580;
+            --secondary: #2BB5B2;
+            --accent: #E8833A;
             --success: #10b981;
-            --dark: #0f172a;
-            --dark-2: #1e293b;
+            --dark: #0D1B2A;
+            --dark-2: #152238;
             --gray: #64748b;
             --gray-light: #94a3b8;
             --light: #f8fafc;
-            --gradient: linear-gradient(135deg, #6366f1 0%, #ec4899 50%, #06b6d4 100%);
+            --gradient: linear-gradient(135deg, #1B3A5C 0%, #2BB5B2 50%, #E8833A 100%);
             --glass: rgba(255, 255, 255, 0.05);
             --glass-border: rgba(255, 255, 255, 0.08);
         }
@@ -156,12 +156,12 @@
         .btn-primary {
             background: var(--gradient);
             color: white;
-            box-shadow: 0 4px 24px rgba(99, 102, 241, 0.35);
+            box-shadow: 0 4px 24px rgba(43, 181, 178, 0.35);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.5);
+            box-shadow: 0 8px 32px rgba(43, 181, 178, 0.5);
         }
 
         .btn-secondary {
@@ -203,9 +203,9 @@
             width: 200%;
             height: 200%;
             background:
-                radial-gradient(circle at 25% 45%, rgba(99, 102, 241, 0.18) 0%, transparent 50%),
-                radial-gradient(circle at 75% 55%, rgba(236, 72, 153, 0.12) 0%, transparent 50%),
-                radial-gradient(circle at 50% 85%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+                radial-gradient(circle at 25% 45%, rgba(27, 58, 92, 0.25) 0%, transparent 50%),
+                radial-gradient(circle at 75% 55%, rgba(43, 181, 178, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 50% 85%, rgba(232, 131, 58, 0.08) 0%, transparent 50%);
             animation: heroFloat 25s ease-in-out infinite;
         }
 
@@ -238,12 +238,12 @@
             align-items: center;
             gap: 8px;
             padding: 8px 18px;
-            background: rgba(99, 102, 241, 0.15);
-            border: 1px solid rgba(99, 102, 241, 0.25);
+            background: rgba(43, 181, 178, 0.15);
+            border: 1px solid rgba(43, 181, 178, 0.25);
             border-radius: 50px;
             font-size: 14px;
             font-weight: 500;
-            color: #a5b4fc;
+            color: #5ED4D1;
             margin-bottom: 28px;
             animation: badgePulse 3s ease-in-out infinite;
         }
@@ -252,11 +252,11 @@
 
             0%,
             100% {
-                box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.2);
+                box-shadow: 0 0 0 0 rgba(43, 181, 178, 0.2);
             }
 
             50% {
-                box-shadow: 0 0 0 8px rgba(99, 102, 241, 0);
+                box-shadow: 0 0 0 8px rgba(43, 181, 178, 0);
             }
         }
 
@@ -398,7 +398,7 @@
 
         .feature-card:hover {
             transform: translateY(-6px);
-            border-color: rgba(99, 102, 241, 0.4);
+            border-color: rgba(43, 181, 178, 0.4);
             box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
         }
 
@@ -414,11 +414,11 @@
         }
 
         .feature-icon.purple {
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            background: linear-gradient(135deg, #1B3A5C, #2A5580);
         }
 
         .feature-icon.pink {
-            background: linear-gradient(135deg, #ec4899, #f472b6);
+            background: linear-gradient(135deg, #2BB5B2, #3DD4D0);
         }
 
         .feature-icon.cyan {
@@ -479,7 +479,7 @@
 
         .pricing-card.popular {
             border-color: var(--primary);
-            box-shadow: 0 0 50px rgba(99, 102, 241, 0.2);
+            box-shadow: 0 0 50px rgba(43, 181, 178, 0.2);
         }
 
         .pricing-card.popular::before {
@@ -618,7 +618,7 @@
             width: 44px;
             height: 44px;
             border-radius: 12px;
-            background: rgba(99, 102, 241, 0.15);
+            background: rgba(43, 181, 178, 0.15);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -680,7 +680,7 @@
         .form-group textarea:focus {
             outline: none;
             border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+            box-shadow: 0 0 0 3px rgba(43, 181, 178, 0.15);
         }
 
         .form-group textarea {
