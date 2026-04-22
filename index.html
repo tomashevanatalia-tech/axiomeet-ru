@@ -121,6 +121,26 @@
             width: 100%;
         }
 
+        /* Login CTA in nav (separate from the plain nav links) */
+        .nav-links .nav-login {
+            color: var(--primary-light);
+            border: 1.5px solid var(--primary);
+            padding: 7px 16px;
+            border-radius: 10px;
+            font-size: 14px;
+            margin-left: 4px;
+            transition: all 0.2s;
+        }
+
+        .nav-links .nav-login:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .nav-links .nav-login::after {
+            display: none
+        }
+
         .hamburger {
             display: none;
             flex-direction: column;
@@ -904,6 +924,8 @@
                 <a href="#features">Возможности</a>
                 <a href="#pricing">Тарифы</a>
                 <a href="#contact">Контакты</a>
+                <!-- Личный кабинет (SPA на spa.axiomeet.io, проксируется через Cloudflare на Railway axiomeet-web) -->
+                <a href="https://spa.axiomeet.io/login" class="nav-login" rel="nofollow">Войти</a>
             </div>
             <div class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')">
                 <span></span><span></span><span></span>
@@ -924,6 +946,7 @@
                     задачами, решениями и ключевыми фактами. Экономьте до 5&nbsp;часов в&nbsp;неделю.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Попробовать бесплатно</a>
+                    <a href="https://spa.axiomeet.io/login" class="btn btn-outline" rel="nofollow">Войти в кабинет</a>
                     <a href="#how-it-works" class="btn btn-secondary">Узнать больше →</a>
                 </div>
                 <div class="hero-stats">
@@ -1143,6 +1166,8 @@
                     <a href="#pricing">Тарифы</a>
                     <a href="#how-it-works">Как это работает</a>
                     <a href="#contact">Контакты</a>
+                    <a href="https://spa.axiomeet.io/login" rel="nofollow">Войти в кабинет</a>
+                    <a href="https://spa.axiomeet.io/register" rel="nofollow">Регистрация</a>
                 </div>
                 <div class="footer-links-group">
                     <h4>Документы</h4>
