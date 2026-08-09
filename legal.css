@@ -1,0 +1,55 @@
+:root {
+    --primary: #818cf8;
+    --primary-dark: #6366f1;
+    --dark: #0f172a;
+    --panel: #111c32;
+    --text: #f8fafc;
+    --muted: #b5c0d4;
+    --line: rgba(148, 163, 184, .22);
+    --ok: #34d399;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text);
+    background: var(--dark);
+    line-height: 1.72;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 52px 24px 80px; }
+.back-link { display: inline-block; margin-bottom: 26px; color: var(--muted); }
+h1 { margin: 0 0 8px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+h2 { margin: 38px 0 12px; font-size: 22px; }
+h3 { margin: 25px 0 9px; font-size: 17px; }
+p, li, td, th { color: var(--muted); }
+p, ul, ol { margin-top: 0; }
+li { margin-bottom: 7px; }
+a { color: var(--primary); }
+.meta { margin-bottom: 28px; color: #94a3b8; font-size: 14px; }
+.card, .notice {
+    margin: 22px 0;
+    padding: 18px 20px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+}
+.notice { border-left: 4px solid var(--primary-dark); }
+.good { border-left-color: var(--ok); }
+table { width: 100%; border-collapse: collapse; margin: 18px 0 26px; }
+th, td { padding: 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+th { color: var(--text); background: rgba(99, 102, 241, .10); }
+.toc { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 24px 0; }
+.toc a { font-size: 14px; }
+.requisites td:first-child { width: 34%; color: var(--text); }
+.footer-note { margin-top: 46px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 13px; }
+@media (max-width: 640px) {
+    .container { padding: 30px 18px 58px; }
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    td { border-bottom: 0; }
+    tr:last-child td:last-child, td:last-child { border-bottom: 1px solid var(--line); }
+    .requisites td:first-child { width: auto; }
+}
