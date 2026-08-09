@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AxioMeet — AI-транскрипция и протоколы Zoom-встреч</title>
     <meta name="description"
-        content="Автоматическая транскрипция и генерация протоколов Zoom-встреч с помощью AI. Экономьте до 5 часов в неделю. ИП Томашева Н.Б., ИНН 665800847625.">
+        content="AxioMeet автоматически транскрибирует записи встреч и формирует структурированные протоколы. Пробный период: 7 дней или 3 часа обработки. ИП Томашева Н.Б.">
     <meta name="keywords" content="транскрипция zoom, протоколы встреч, AI, автоматизация, axiomeet">
     <link rel="canonical" href="https://axiomeet.ru/">
     <meta property="og:title" content="AxioMeet — AI протоколы встреч">
-    <meta property="og:description" content="Автоматическая транскрипция и генерация протоколов Zoom-встреч за минуты.">
+    <meta property="og:description" content="Автоматическая транскрипция и структурированные протоколы встреч.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://axiomeet.ru/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -730,6 +730,20 @@
             color: var(--primary-light);
         }
 
+        .form-status {
+            min-height: 22px;
+            margin-top: 14px;
+            color: var(--gray-light);
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .form-status.error { color: #b42318; }
+
+        .form-status.success { color: #067647; }
+
+        .form-status a { color: var(--primary-light); }
+
         /* FOOTER */
         footer {
             padding: 48px 0 32px;
@@ -942,25 +956,25 @@
                     <span class="gradient-text">Транскрипция</span> и&nbsp;протоколы<br>
                     ваших встреч <span class="gradient-text">за минуты</span>
                 </h1>
-                <p class="hero-subtitle">Автоматически преобразуем записи Zoom в&nbsp;структурированные протоколы с
-                    задачами, решениями и ключевыми фактами. Экономьте до 5&nbsp;часов в&nbsp;неделю.</p>
+                <p class="hero-subtitle">Автоматически преобразуем записи встреч в&nbsp;структурированные протоколы с
+                    задачами, решениями и ключевыми фактами. Результат остаётся проверить и можно отправлять команде.</p>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Попробовать бесплатно</a>
+                    <a href="https://spa.axiomeet.io/register?lang=ru&amp;source=axiomeet.ru&amp;plan=trial" class="btn btn-primary" rel="nofollow">Попробовать бесплатно</a>
                     <a href="https://spa.axiomeet.io/login?lang=ru" class="btn btn-outline" rel="nofollow">Войти в кабинет</a>
                     <a href="#how-it-works" class="btn btn-secondary">Узнать больше →</a>
                 </div>
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <div class="hero-stat-number">95%</div>
-                        <div class="hero-stat-label">точность транскрипции</div>
+                        <div class="hero-stat-number">7 дней</div>
+                        <div class="hero-stat-label">пробный доступ</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-number">5 мин</div>
-                        <div class="hero-stat-label">от записи до протокола</div>
+                        <div class="hero-stat-number">3 часа</div>
+                        <div class="hero-stat-label">обработки в trial</div>
                     </div>
                     <div class="hero-stat">
-                        <div class="hero-stat-number">24/7</div>
-                        <div class="hero-stat-label">автоматическая обработка</div>
+                        <div class="hero-stat-number">0 ₽</div>
+                        <div class="hero-stat-label">без привязки карты</div>
                     </div>
                 </div>
             </div>
@@ -997,7 +1011,7 @@
                     <div class="step-number">4</div>
                     <div class="step-icon">📄</div>
                     <h3>Получите результат</h3>
-                    <p>Протокол в Google Drive за минуты</p>
+                    <p>Результат в личном кабинете и подключённом хранилище</p>
                 </div>
             </div>
         </div>
@@ -1019,7 +1033,7 @@
                 <div class="feature-card">
                     <div class="feature-icon pink">📋</div>
                     <h3>Умные протоколы</h3>
-                    <p>AI выделяет решения, задачи, сроки и ответственных. Готовый документ за 5 минут.</p>
+                    <p>AI выделяет решения, задачи, сроки и ответственных. Скорость зависит от длины и качества записи.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon cyan">☁️</div>
@@ -1034,7 +1048,7 @@
                 <div class="feature-card">
                     <div class="feature-icon orange">👥</div>
                     <h3>Идентификация спикеров</h3>
-                    <p>5-уровневая система распознавания участников с точностью до 95%.</p>
+                    <p>Разделение реплик по спикерам; результат зависит от качества звука и требует проверки.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon blue">📊</div>
@@ -1057,7 +1071,7 @@
                     <h3>Starter</h3>
                     <p class="pricing-desc">Для небольших команд</p>
                     <div class="price"><span class="price-amount">2 900</span> <span class="price-currency">₽</span>
-                        <span class="price-period">/мес</span>
+                        <span class="price-period">/30 дней</span>
                     </div>
                     <ul>
                         <li>До 20 часов записей</li>
@@ -1066,14 +1080,14 @@
                         <li>Google Drive интеграция</li>
                         <li>Поддержка по email</li>
                     </ul>
-                    <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">Выбрать</a>
+                    <a href="https://spa.axiomeet.io/register?lang=ru&amp;source=axiomeet.ru&amp;plan=starter" class="btn btn-outline" style="width:100%;justify-content:center;" rel="nofollow">Начать с trial</a>
                 </div>
                 <div class="pricing-card popular">
                     <div class="popular-badge">Популярный</div>
                     <h3>Business</h3>
                     <p class="pricing-desc">Для растущих компаний</p>
                     <div class="price"><span class="price-amount">7 900</span> <span class="price-currency">₽</span>
-                        <span class="price-period">/мес</span>
+                        <span class="price-period">/30 дней</span>
                     </div>
                     <ul>
                         <li>До 100 часов записей</li>
@@ -1082,15 +1096,16 @@
                         <li>Telegram уведомления</li>
                         <li>Приоритетная поддержка</li>
                     </ul>
-                    <a href="#contact" class="btn btn-primary" style="width:100%;justify-content:center;">Выбрать</a>
+                    <a href="https://spa.axiomeet.io/register?lang=ru&amp;source=axiomeet.ru&amp;plan=business" class="btn btn-primary" style="width:100%;justify-content:center;" rel="nofollow">Начать с trial</a>
                 </div>
             </div>
-            <p class="pricing-note">Пробный период — 7 дней бесплатно. Отмена в любой момент.</p>
+            <p class="pricing-note">Однократный пробный период: 7 дней или 3 часа обработки — что наступит раньше. Карта не нужна, автосписания нет.</p>
             <div class="payment-badges">
-                <div class="payment-badge">🏦 Оплата через СБП</div>
-                <div class="payment-badge">⚡ Банк Точка</div>
-                <div class="payment-badge">🔒 Безопасные платежи</div>
+                <div class="payment-badge">₽ Оплата в рублях</div>
+                <div class="payment-badge">💳 Карты и СБП — после подключения</div>
+                <div class="payment-badge">🧾 Электронный кассовый чек</div>
             </div>
+            <p class="pricing-note"><a href="/payment">Условия оплаты, оказания услуги и возврата</a> · <a href="/requisites">Реквизиты продавца</a></p>
         </div>
     </section>
 
@@ -1100,7 +1115,7 @@
             <div class="contact-wrapper reveal">
                 <div class="contact-info">
                     <h2>Готовы начать?</h2>
-                    <p>Свяжитесь с нами — поможем настроить автоматизацию. Пробный период 7 дней бесплатно.</p>
+                    <p>Свяжитесь с нами — поможем настроить сервис. Для самостоятельного старта доступен trial: 7 дней или 3 часа обработки.</p>
                     <div class="contact-item">
                         <div class="contact-item-icon">📧</div>
                         <div>
@@ -1121,7 +1136,7 @@
                         <div class="contact-item-icon">📞</div>
                         <div>
                             <div class="contact-item-label">Телефон</div>
-                            <div class="contact-item-value"><a href="tel:+79220227225">+7 (922) 022-72-25</a></div>
+                            <div class="contact-item-value"><a href="tel:+79220227225">+7&nbsp;(922)&nbsp;022&#8209;72&#8209;25</a></div>
                         </div>
                     </div>
                 </div>
@@ -1137,14 +1152,13 @@
                                 name="message" required placeholder="Расскажите о вашей задаче..."></textarea></div>
                         <div class="form-group">
                             <label class="consent-label">
-                                <input type="checkbox" name="consent" required>
-                                <span>Даю согласие на обработку персональных данных (<a href="/privacy"
-                                        target="_blank">Политика</a>) и принимаю <a href="/oferta"
-                                        target="_blank">Публичную оферту</a></span>
+                                <input type="checkbox" name="personal_data_consent" value="yes" required>
+                                <span>Даю отдельное <a href="/consent" target="_blank">согласие на обработку персональных данных</a> и ознакомлен(а) с <a href="/privacy" target="_blank">Политикой</a></span>
                             </label>
                         </div>
                         <button type="submit" class="btn btn-primary"
                             style="width:100%;justify-content:center;">Отправить заявку</button>
+                        <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
                     </form>
                 </div>
             </div>
@@ -1172,7 +1186,10 @@
                 <div class="footer-links-group">
                     <h4>Документы</h4>
                     <a href="/oferta">Публичная оферта</a>
-                    <a href="/privacy">Политика конфиденциальности</a>
+                    <a href="/payment">Оплата и возврат</a>
+                    <a href="/requisites">Реквизиты продавца</a>
+                    <a href="/privacy">Политика обработки ПД</a>
+                    <a href="/consent">Согласие на обработку ПД</a>
                     <a href="/terms">Пользовательское соглашение</a>
                 </div>
             </div>
@@ -1182,7 +1199,7 @@
                     ИНН: 665800847625 &nbsp;|&nbsp; ОГРНИП: 322665800165280<br>
                     620102, Свердловская обл., г.&nbsp;Екатеринбург, ул.&nbsp;Шаумяна, д.&nbsp;98, корп.&nbsp;3,
                     кв.&nbsp;8<br>
-                    Тел.: <a href="tel:+79220227225">+7 (922) 022-72-25</a> &nbsp;|&nbsp;
+                    Тел.: <a href="tel:+79220227225">+7&nbsp;(922)&nbsp;022&#8209;72&#8209;25</a> &nbsp;|&nbsp;
                     Email: <a href="mailto:tomasheva.natalia@yandex.ru">tomasheva.natalia@yandex.ru</a><br><br>
                     © 2025–2026 AxioMeet. Все права защищены.
                 </div>
@@ -1192,16 +1209,15 @@
 
     <!-- COOKIE BANNER -->
     <div class="cookie-banner" id="cookieBanner">
-        <p>Мы используем cookie для работы сайта. Продолжая, вы соглашаетесь с <a href="/privacy">Политикой
-                конфиденциальности</a>.</p>
-        <button class="cookie-accept" id="cookieAccept">Принять</button>
+        <p>Сайт использует только техническое локальное хранилище, чтобы запомнить закрытие этого уведомления. Подробнее — в <a href="/privacy">Политике</a>.</p>
+        <button type="button" class="cookie-accept" id="cookieAccept">Понятно</button>
     </div>
 
     <script>
         // Cookie
-        if (!localStorage.getItem('cookieConsent_ru')) document.getElementById('cookieBanner').classList.add('show');
+        if (!localStorage.getItem('cookieNotice_ru')) document.getElementById('cookieBanner').classList.add('show');
         document.getElementById('cookieAccept').addEventListener('click', function () {
-            localStorage.setItem('cookieConsent_ru', 'true');
+            localStorage.setItem('cookieNotice_ru', 'closed');
             document.getElementById('cookieBanner').classList.remove('show');
         });
         // Smooth scroll
@@ -1218,14 +1234,22 @@
         }, { threshold: 0.15 });
         document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
         // Form
-        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            const d = Object.fromEntries(new FormData(this)); delete d.consent;
-            try {
-                const r = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(d) });
-                if (r.ok) { alert('Спасибо! Мы свяжемся с вами.'); this.reset(); }
-                else throw new Error();
-            } catch { alert('Заявка принята! Мы свяжемся с вами по email.'); this.reset(); }
+            const status = document.getElementById('formStatus');
+            const button = this.querySelector('button[type="submit"]');
+            const d = Object.fromEntries(new FormData(this));
+            delete d.personal_data_consent;
+            status.className = 'form-status';
+            status.textContent = 'Открываем почтовое приложение…';
+            button.disabled = true;
+            const subject = encodeURIComponent('Заявка с axiomeet.ru');
+            const body = encodeURIComponent(`Имя: ${d.name}\nEmail: ${d.email}\nКомпания: ${d.company || '—'}\n\n${d.message}`);
+            const mailLink = `mailto:tomasheva.natalia@yandex.ru?subject=${subject}&body=${body}`;
+            status.className = 'form-status';
+            status.innerHTML = `Отправьте подготовленное письмо в открывшемся приложении. Если оно не открылось, <a href="${mailLink}">нажмите здесь</a>.`;
+            window.location.href = mailLink;
+            button.disabled = false;
         });
     </script>
 </body>
